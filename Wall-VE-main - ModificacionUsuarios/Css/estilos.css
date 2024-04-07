@@ -164,6 +164,7 @@ label{
     text-align: left;
     
 }
+
 .TAgregar{
     display: flex;
     position:relative;
@@ -171,6 +172,22 @@ label{
     left: 14rem;
     flex-direction: column;
 
+}
+.TEditar{
+    display: flex;
+    position:relative;
+    left: 14rem;
+    flex-direction: column;
+
+}
+.Did{
+
+    display: flex;
+    position: absolute;
+    
+    left: 18rem;
+    flex-direction: column;
+    
 }
 .DNombre{
     display: flex;
@@ -335,10 +352,12 @@ label{
 }
 .btnagregar a{
         
-    width: 7rem;
+    width: 12rem;
     text-decoration: none;
     color: #0C6A6F;
 }
+
+
 
 
 

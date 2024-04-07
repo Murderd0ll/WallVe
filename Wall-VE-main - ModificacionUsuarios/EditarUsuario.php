@@ -151,52 +151,106 @@ include("connection/conexion.php");
 
     <form action="<?=$_SERVER['PHP_SELF']?>" method="POST">
     <br>
+    <div class="TEditar">
 
+    <div class="Did">
     <label>ID del usuario: <?php echo $idEmp; ?></label><br><br>
-    <label>Nombre </label>
-    <input type="text" name="nombreEmp" value="<?php echo $nombreEmp; ?>"> <br>
+    </div>
 
-    <label>Apellido paterno </label>
-    <input type="text" name="apellidoPEmp" value="<?php echo $apellidoPEmp; ?>"> <br>
+    <div class="DNombre">
+        <label>Nombre </label>
+        <input type="text" name="nombreEmp" value="<?php echo $nombreEmp; ?>"> <br>
+    </div>
 
-    <label>Apellido materno </label>
-    <input type="text" name="apellidoMEmp" value="<?php echo $apellidoMEmp; ?>"> <br>
+    <div class="DPAT">
+        <label>Apellido paterno </label>
+        <input type="text" name="apellidoPEmp" value="<?php echo $apellidoPEmp; ?>"> <br>
+    </div>
 
+    <div class="DMAT">
+        <label>Apellido materno </label>
+        <input type="text" name="apellidoMEmp" value="<?php echo $apellidoMEmp; ?>"> <br>
+    </div>
+
+    <div class="DFecha">
     <label>Fecha de nacimiento </label>
     <input type="text" name="fechaNacEmp" value="<?php echo $fechaNacEmp; ?>"> <br>
-
+    </div>
+    
+    <div class="DTel">
     <label>Telefono </label>
     <input type="text" name="telEmp" value="<?php echo $telEmp; ?>"> <br>
+    </div>
 
+    <div class="DgeneroLab">
     <label>Genero </label>
     <input type="text" name="generoEmp" value="<?php echo $generoEmp; ?>"> <br>
+    
+    </div>
+    <div class="DGeneroInputs">
+        
+        <input type="radio" name="generoEmp" value="Femenino" <?php if($generoEmp == "Femenino") echo "checked";?>>Femenino
+        <input type="radio" name="generoEmp" value="Masculino" <?php if($generoEmp == "Masculino") echo "checked";?>>Masculino
 
+    </div>
+    
+
+    <div class="Dciudad">
     <label>Ciudad </label>
     <input type="text" name="ciudadEmp" value="<?php echo $ciudadEmp; ?>"> <br>
+    </div>
 
+    <div class="DDire">
     <label>Dirección </label>
     <input type="text" name="direccionEmp" value="<?php echo $direccionEmp; ?>"> <br>
+    </div>
 
+    <div class="DEmail">
     <label>E-Mail </label>
     <input type="text" name="emailEmp" value="<?php echo $emailEmp; ?>"> <br>
+    </div>
 
+    <div class="DTurno">
     <label>Turno </label>
     <input type="text" name="turnoEmp" value="<?php echo $turnoEmp; ?>"> <br>
+    </div>
+    <div class="DTurnoInputs">
+    <input type="radio" name="turnoEmp" value="Vespertino" <?php if($turnoEmp == "Vespertino") echo "checked";?>>Vespertino
+    <input type="radio" name="turnoEmp" value="Matutino" <?php if($turnoEmp == "Matutino") echo "checked";?>>Matutino
 
+    
+
+    
+    </div>
+
+    <div class="DRol">
     <label>Rol </label>
     <input type="text" name="rolEmp" value="<?php echo $rolEmp; ?>"> <br>
+    </div>
 
+    <div class="DLogin">
     <label>Nombre de usuario </label>
     <input type="text" name="idloginEmp" value="<?php echo $idloginEmp; ?>"> <br>
+    </div>
 
+    <div class="DContra">
     <label>Contraseña </label>
     <input type="text" name="passEmp" value="<?php echo $passEmp; ?>"> <br>
+    </div>
 
     <input type="hidden" name ="idEmp" value ="<?php echo $idEmp; ?>">
 
+    <div class="BotonCan">
+        <a href="Admin_Usuarios.php">Regresar</a>
+        </div>
+
+        <div class="BotonAgg">
     <input type="submit" name ="editarUsuario" value="Actualizar">
-    <a href="Admin_Usuarios.php">Regresar</a>
+        </div >
     </form>
+    </div>
+
+    
     <?php 
 }?>
     
